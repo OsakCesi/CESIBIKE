@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Configuration</title>
     <link rel="stylesheet" href="css/entete.css">
+    <link rel="stylesheet" href="css/config.css">
 </head>
+
 <body>
     <div class="conteiner-navbar">
-          <div>
-              <h1>CESIBIKE</h1>
-          </div>
+        <div>
+            <h1>CESIBIKE</h1>
+        </div>
         <nav class="entete">
-            <a href="">Accueil</a>
+            <a href="index.html">Accueil</a>
             <a href="configuration.html" class="active">Configuration</a>
             <a href="">Visualisation</a>
         </nav>
@@ -20,7 +23,48 @@
 
 
 
-    
+    <div class="super-container">
+        <div class="titre">
+            <h1>Configuration des poste</h1>
+        </div>
+        <div class="container">
+            <div>
+                <form action="">
+                    <label for="">Entrer le nombre de postes</label>
+                    <input type="number">
+                    <button onclick="btn1_suiv()">Suivant</button>
+                </form>
+            </div>
 
+
+            <div class="config-poste">
+                <h3>Poste 1</h3>
+                <form action="">
+                    <label for="">Entrez le nombre d'étapes de cet poste</label>
+                    <input type="number">
+                    <label for="">Ajouter une pièce</label>
+                    <input type="text" name="" id="">
+                    <label for="">Quantité max</label>
+                    <input type="number">
+                    <button>Suivant</button>
+                </form>
+            </div>
+
+            <div class="config-etape">
+                <h3>Etape 1</h3>
+                <form action="">
+                    <label for="">Ajouter un pièce</label>
+                    <input type="number">
+                    <label for="">Quantité</label>
+                    <input type="number">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="javascript/config.js"></script>
 </body>
+
 </html>
