@@ -1,0 +1,28 @@
+
+*{
+   padding: 0px;
+   margin: 0px;
+}
+
+.conteiner-navbar{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    background-color: #0a0908;
+    color: yellow;
+    padding: 15px;
+}
+
+.entete{
+    display: flex;
+    gap: 250px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: yellow;
+}
