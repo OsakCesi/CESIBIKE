@@ -1,0 +1,23 @@
+.tableau-de-bord {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.colonne {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.colonne section {
+    width: 250px;
+    background-color: #f5f5f5;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
