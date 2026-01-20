@@ -21,52 +21,77 @@
         </nav>
     </div>
 
-
-
     <div class="super-container">
         <div class="titre">
-            <h1>Configuration des poste</h1>
+            <h1>Configuration des postes</h1>
         </div>
         <div class="container">
             <div id="nbPost" class="on">
-                <form action="">
-                    <label for="">Entrer le nombre de postes</label>
-                    <input type="number">
+                <form>
+                    <label for="inputNbPosts">Entrer le nombre de postes</label>
+                    <input type="number" id="inputNbPosts" min="1">
                     <button type="button" onclick="btn1_suiv()">Suivant</button>
                 </form>
             </div>
 
-
             <div class="off" id="confPste">
                 <h3>Poste 1</h3>
-                <form action="">
-                    <label for="">Entrez le nombre d'étapes de cet poste</label>
-                    <input type="number">
-                    <div>
-                        <label for="">Ajouter une pièce</label>
-                        <input type="text" name="" id="" class="piName">
-                        <label for="">Quantité max</label>
-                        <input type="number" class="piQuant">
+                <form>
+                    <label for="inputNbEtapes">Entrez le nombre d'étapes de ce poste</label>
+                    <input type="number" id="inputNbEtapes" min="1">
+
+                    <div class="pieces-container" id="piecesPosteContainer">
+                        <div class="piece-group">
+                            <div class="piece-header">
+                                <span class="piece-title">Pièce 1</span>
+                            </div>
+                            <div class="piece-row">
+                                <div class="piece-field">
+                                    <label>Nom de la pièce</label>
+                                    <input type="text" class="piName" placeholder="Ex: Roue, Cadre...">
+                                </div>
+                                <div class="piece-field">
+                                    <label>Quantité max</label>
+                                    <input type="number" class="piQuant" min="1">
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
+                    <button type="button" class="btn-add-piece" onclick="ajouterPiecePoste()">+ Ajouter une
+                        pièce</button>
                     <button type="button" onclick="next()">Suivant</button>
                 </form>
             </div>
 
             <div class="off" id="confEtp">
-                <h3>Etape 1</h3>
-                <form action="">
-                    <label for="">Ajouter un pièce</label>
-                    <input type="number">
-                    <label for="">Quantité</label>
-                    <input type="number">
+                <h3>Étape 1</h3>
+                <form>
+                    <div class="pieces-container" id="piecesEtapeContainer">
+                        <div class="piece-group">
+                            <div class="piece-header">
+                                <span class="piece-title">Pièce 1</span>
+                            </div>
+                            <div class="piece-row">
+                                <div class="piece-field">
+                                    <label>Nom de la pièce</label>
+                                    <input type="text" placeholder="Ex: Vis, Écrou...">
+                                </div>
+                                <div class="piece-field">
+                                    <label>Quantité</label>
+                                    <input type="number" min="1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn-add-piece" onclick="ajouterPieceEtape()">+ Ajouter une
+                        pièce</button>
+                    <button type="button" onclick="terminer()">Terminer</button>
                 </form>
             </div>
         </div>
     </div>
-
-
-
     <script src="javascript/config.js"></script>
 </body>
 
