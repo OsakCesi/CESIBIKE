@@ -1,9 +1,7 @@
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -63,7 +61,7 @@ form {
 }
 
 
-form > div {
+form>div {
     display: flex;
     gap: 10px;
     align-items: center;
