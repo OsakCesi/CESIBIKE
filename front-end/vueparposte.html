@@ -4,11 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
+    <title>Vue d’un poste</title>
+
     <link rel="stylesheet" href="css/entete.css">
     <link rel="stylesheet" href="css/vueparposte.css">
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
 <body>
+
     <div class="conteiner-navbar">
         <div>
             <h1>CESIBIKE</h1>
@@ -16,6 +21,48 @@
         <nav class="entete">
             <a href="index.html">Accueil</a>
             <a href="configuration.html">Configuration</a>
-            <a href="visualisation.html" class="active">Visualisation</a>
+            <a href="visualisation.html">Visualisation</a>
         </nav>
     </div>
+
+    <main class="vue-poste">
+
+        <section class="titre">
+            <h2>Vue d’un poste</h2>
+
+            <select id="select-poste">
+                <option value="1">Poste 1</option>
+                <option value="2">Poste 2</option>
+                <option value="3">Poste 3</option>
+                <option value="4">Poste 4</option>
+                <option value="5">Poste 5</option>
+                <option value="6">Poste 6</option>
+            </select>
+        </section>
+
+        <section class="stock">
+            <h3>État du stock</h3>
+            <table class="table-stock">
+                <thead>
+                    <tr>
+                        <th>Pièce</th>
+                        <th>Quantité</th>
+                    </tr>
+                </thead>
+                <tbody id="stock-body">
+                    <!-- JS injecte ici -->
+                </tbody>
+            </table>
+        </section>
+
+        <section class="evolution">
+            <h3>Évolution du temps par étape</h3>
+            <canvas id="graph-etapes"></canvas>
+        </section>
+
+    </main>
+
+    <script src="js/poste.js"></script>
+</body>
+
+</html>

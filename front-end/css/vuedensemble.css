@@ -1,4 +1,91 @@
-.titre {
+.Vue-densemble {
+    width: 85%;
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.titre h2 {
     text-align: center;
-    padding: 30px;
+    font-size: 1.8rem;
+    color: #231a1a;
+}
+
+.tableau-postes {
+    width: 100%;
+    border-collapse: collapse;
+    background: #2b2b2b;
+    border-radius: 8px;
+    overflow: hidden;
+    color: #e6e6e6;
+    table-layout: fixed;
+}
+
+.tableau-postes thead th {
+    background: #1f1f1f;
+    color: #ffffff;
+    padding: 1rem;
+    font-weight: 500;
+    text-align: center;
+    border-bottom: 2px solid #3a3a3a;
+    white-space: nowrap;
+}
+
+.tableau-postes tbody tr {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.tableau-postes tbody tr:hover {
+    background: #353535;
+}
+
+.tableau-postes td {
+    width: 33.33%;
+    padding: 1rem;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.jauge-barre {
+    width: 100%;
+    max-width: 200px;
+    height: 16px;
+    background: #444;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0.3rem auto;
+    position: relative;
+}
+
+.jauge-remplissage {
+    height: 100%;
+    width: var(--valeur);
+    background: linear-gradient(to right, #007bff, #4da3ff);
+    transition: width 0.4s ease;
+}
+
+.valeur {
+    display: block;
+    margin-top: 0.3rem;
+    font-size: 0.9rem;
+    color: #cfcfcf;
+}
+
+@media (max-width: 700px) {
+    .tableau-postes {
+        font-size: 0.9rem;
+    }
+
+    .jauge-barre {
+        max-width: 130px;
+        height: 14px;
+    }
+
+    .valeur {
+        font-size: 0.8rem;
+    }
 }

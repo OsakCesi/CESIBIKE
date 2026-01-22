@@ -4,15 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
+    <title>Visualisation</title>
+
     <link rel="stylesheet" href="css/entete.css">
     <link rel="stylesheet" href="css/vuedensemble.css">
+</head>
 
 <body>
+
     <div class="conteiner-navbar">
         <div>
             <h1>CESIBIKE</h1>
         </div>
+
         <nav class="entete">
             <a href="index.html">Accueil</a>
             <a href="configuration.html">Configuration</a>
@@ -21,6 +25,7 @@
     </div>
 
     <main class="Vue-densemble">
+
         <section class="titre">
             <h2>Vue d'ensemble de l'atelier</h2>
         </section>
@@ -34,73 +39,14 @@
                 </tr>
             </thead>
 
-            <tbody>
-                <tr>
-                    <td>Poste 1</td>
-                    <td>
-                        <div class="jauge-barre">
-                            <div class="jauge-remplissage" style="--valeur: 72%;"></div>
-                        </div>
-                        <span class="valeur">72%</span>
-                    </td>
-                    <td>4 min</td>
-                </tr>
+            <tbody id="table-body">
 
-                <tr>
-                    <td>Poste 2</td>
-                    <td>
-                        <div class="jauge-barre">
-                            <div class="jauge-remplissage" style="--valeur: 35%;"></div>
-                        </div>
-                        <span class="valeur">35%</span>
-                    </td>
-                    <td>2 min</td>
-                </tr>
-
-                <tr>
-                    <td>Poste 3</td>
-                    <td>
-                        <div class="jauge-barre">
-                            <div class="jauge-remplissage" style="--valeur: 90%;"></div>
-                        </div>
-                        <span class="valeur">90%</span>
-                    </td>
-                    <td>7 min</td>
-                </tr>
-
-                <tr>
-                    <td>Poste 4</td>
-                    <td>
-                        <div class="jauge-barre">
-                            <div class="jauge-remplissage" style="--valeur: 50%;"></div>
-                        </div>
-                        <span class="valeur">50%</span>
-                    </td>
-                    <td>3 min</td>
-                </tr>
-
-                <tr>
-                    <td>Poste 5</td>
-                    <td>
-                        <div class="jauge-barre">
-                            <div class="jauge-remplissage" style="--valeur: 10%;"></div>
-                        </div>
-                        <span class="valeur">10%</span>
-                    </td>
-                    <td>1 min</td>
-                </tr>
-
-                <tr>
-                    <td>Poste 6</td>
-                    <td>
-                        <div class="jauge-barre">
-                            <div class="jauge-remplissage" style="--valeur: 65%;"></div>
-                        </div>
-                        <span class="valeur">65%</span>
-                    </td>
-                    <td>5 min</td>
-                </tr>
             </tbody>
         </table>
+
     </main>
+
+    <script src="js/vuedensemble.js"></script>
 </body>
+
+</html>
